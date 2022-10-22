@@ -5,25 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./apps.js"></script>
 </head>
 <body>
-    <form class="form">
-        input number 1<input type="text" id="t1"/><br>
-        input number 2 <input type="text" id="t2"/><br>
-        <input type="button" value="submit" onclick="checkForm()">
-    </form>
-    <script type="text/javascript">
-        function checkForm(){
-            let number1 = document.getElementById('t1').value;
-            let number2 = document.getElementById('t2').value;
-            let solution = document.querySelector('solution');
-            for(let i = number1; i <= number2; i++){
-                console.log(i);
-            }
-            alert("Mở console de xem solution")
-        }
-    </script>
+    <div>
+        nhap so <input type="text" id="t1"><br>
+        <input type="button" value="In kết quả" onclick="numberOneTriangle()">
+    </div>
 </body>
 </html>
-
-
